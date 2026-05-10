@@ -23,9 +23,9 @@ services:
       - 2333
     ports:
       # you only need this if you want to make your lavalink accessible from outside of containers, keep in mind this will expose your lavalink to the internet
-      - "2333:2333"
+      # - "2333:2333"
       # if you want to restrict access to localhost only
-      # - "127.0.0.1:2333:2333"
+       - "127.0.0.1:2333:2333"
 networks:
   # create a lavalink network you can add other containers to, to give them access to Lavalink
   lavalink:
